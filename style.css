@@ -1,0 +1,575 @@
+/*===============================================
+    Common CSS
+================================================*/
+body{
+    color: #8a8a8a;
+    font-size: 14px;
+    font-family: Georgia, sans-serif;
+    line-height: 1.5em;
+    margin: 0;
+}
+.container{
+    width: 96%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.alignleft{
+    float: left;
+    margin: 0 15px 15px;
+}
+.alignright{
+    float: right;
+    margin: 15px 15px 0;
+}
+.aligncenter{
+    display: block;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+
+/*===============================================
+    Top Header Area CSS
+================================================*/
+.header_area{
+    width: 100%;
+    clear: both;
+    background: #020001;
+}
+#top_header_area{
+    width: 100%;
+    background: #2c353a;
+    border-top: 5px solid #12171d;
+    padding: 23px 0 20px;
+}
+.inner_top_header{
+    min-height: 60px;
+}
+.logo_area{
+    width: 220px;
+    float: left;
+}
+.main_menu {
+    width: 100%;
+    max-width: 700px;
+    float: right;
+    padding-top: 20px;
+}
+.main_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+.main_menu ul li{
+    display: inline-block;
+    margin-left: 50px;
+    position: relative;
+}
+.main_menu ul li::after{
+    content: "";
+    width: 1px; 
+    height: 10px;
+    background: #ffffff;
+    position: absolute;
+    top: 6px;
+    right: -25px;
+}
+.main_menu ul li:last-child::after{
+    display: none;
+}
+.main_menu ul li a{
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.5s;
+    padding: 42px 0;
+}
+.main_menu ul li a:hover{
+    color: #bd5454;
+}
+
+/*Dropdown Menu*/
+.main_menu ul ul{
+    position: absolute;
+    left: -99999px;
+    top: 58px;
+    background: #303d44;
+    width: 180px;
+    text-align: center;
+}
+.main_menu ul li:hover ul{
+    left: 0;
+}
+.main_menu ul ul li{
+    margin: 0;
+    display: block;
+}
+.main_menu ul ul li::after{
+    display: none;
+}
+.main_menu ul ul a{
+    display: block;
+    padding: 3px 0;
+}
+.main_menu ul ul ul{
+    left: -99999px;
+    top: 0;
+}
+.main_menu ul li:hover ul ul{
+    left: -99999px;
+}
+.main_menu ul ul li:hover ul{
+    left: 180px;
+}
+.main_menu ul li:hover a{
+    color: #bd5454;
+}
+.main_menu ul li:hover ul li a{
+    color: #ffffff;
+}
+.main_menu ul ul li:hover a{
+    color: #bd5454;
+    background: #020001;
+}
+.main_menu ul ul li:hover ul li a{
+    background: none;
+}
+.main_menu ul ul li ul li a:hover{
+    background: #020001;
+}
+
+
+/*===============================================
+   Main Header Area CSS 
+================================================*/
+#main_header_area{
+    width: 100%;
+    background: #020001;
+    padding: 30px 0;
+}
+.inner_header{
+    overflow: hidden;
+}
+
+.header_image{
+    width: 60%;
+    float: left;
+    padding: 0 0 10px;
+}
+.header_text{
+    width: 40%;
+    float: right;
+}
+
+.header_image{
+    position: relative;
+}
+.header_image img{
+    border: 1px solid #fff;
+}
+.header_image .image{
+    margin-right: 90px;
+    margin-top: 30px;
+}
+.header_image img:last-child{
+    position: absolute;
+    left: 100px;
+}
+
+.header_text h1{
+    color: #adadad;
+    font-size: 42px;
+    font-style: italic;
+    line-height: 1.1em;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+.header_text p{
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.7em;
+}
+.header_text a{
+    display: inline-block;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: #969697;
+    padding: 11px;
+    box-shadow: -2px -2px 5px #969697;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.header_text a:hover{
+    color: #d6d3d3;
+}
+
+
+/*===============================================
+    Mini Menu CSS
+================================================*/
+#mini_menu{
+    width: 100%;
+    clear: both;
+    padding-bottom: 15px;
+}
+.inner_menu{
+    overflow: hidden;
+}
+.inner_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.inner_menu ul li{
+    width: 31.5%;
+    margin: 1%;
+    display: inline-block;
+}
+.inner_menu ul li:first-child{
+    margin-left: 0;
+}
+.inner_menu ul li:last-child{
+    margin-right: 0;
+}
+.inner_menu ul li a{
+    margin: 0;
+    display: block;
+    font-size: 32px;
+    text-transform: uppercase;
+    padding: 23px 20px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.inner_menu ul li:first-child a{
+    color: #6f911e;
+    background: #afda4e;
+    box-shadow: -2px -2px 2px #689e27;
+}
+.inner_menu ul li:nth-child(2) a{
+    color: #ad8300;
+    background: #ffd047;
+    box-shadow: -2px -2px 2px #df9624;
+}
+.inner_menu ul li:last-child a{
+    color: #2195b1;
+    background: #84d5e8;
+    box-shadow: -2px -2px 2px #4ba9c5;
+}
+.inner_menu ul li a:hover{
+    color: #131314;
+}
+
+
+/*===============================================
+    Work Area CSS
+================================================*/
+#work_area{
+    width: 100%;
+    clear: both;
+    padding: 50px 0;
+    background: #ffffff;
+}
+.inner_work{
+    overflow: hidden;
+}
+.child_work{
+    width: 32%;
+    float: left;
+    margin: 0 1%;
+}
+.child_work:first-child{
+    margin-left: 0;
+}
+.child_work:last-child{
+    margin-right: 0;
+}
+.inner_child{
+    width: 100%;
+    overflow: hidden;
+    padding: 15px 0;
+    border-bottom: 1px solid #e8e8e8;
+}
+.child_image{
+    width: 30%;
+    float: left;
+    margin-right: 1%;
+}
+.child_image img{
+    display: block;
+    padding: 4px;
+    border: 1px solid #e8e8e8;
+}
+.child_text{
+    width: 69%;
+    float: right;
+}
+.child_text h2{
+    color: #666666;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0;
+}
+.child_text p{
+    color: #8a8a8a;
+    font-size: 13px;
+    font-weight: normal;
+    margin-top: 5px;
+    line-height: 1.3em;
+    margin-bottom: 2px;
+}
+.child_text a{
+    display: block;
+    float: right;
+    clear: both;
+    color: #84d5e8;
+    font-size: 13px;
+    text-decoration: none;
+}
+.child_text a:hover{
+    color: #7cc3d3;
+}
+
+
+/*===============================================
+    Footer Area CSS
+================================================*/
+#footer_area{
+    width: 100%;
+    clear: both;
+    background: #000000;
+    padding: 30px 0;
+}
+.inner_footer{
+    overflow: hidden;
+}
+.link_area{
+    width: 60%;
+    float: left;
+}
+.quick_link{
+    width: 32%;
+    float: left;
+    margin: 0 1%;
+}
+.quick_link:first-child{
+    margin-left: 0;
+}
+.quick_link:last-child{
+    margin-right: 0;
+}
+.inner_footer h3{
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: italic;
+    border-bottom: 1px solid #ffffff;
+    margin: 0 0 10px;
+    padding-bottom: 14px;
+}
+.quick_link ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+.quick_link ul li{
+    display: block;
+    line-height: 1.5em;
+}
+.quick_link ul li a{
+    color: #84d4e7;
+    font-size: 14PX;
+    text-decoration: none;
+    display: block;
+}
+.quick_link ul li a:hover{
+    color: #fff;
+}
+.contact_area{
+    width: 30%;
+    float: right;
+    text-align: right;
+}
+.contact_area h3, form, div{
+    text-align: left;
+}
+.contact_area form{
+    width: 100%;
+}
+.contact_area label{
+    display: block;
+    margin: 13px 0;
+    color: #ffffff;
+    font-size: 13px;
+}
+.contact_area input{
+    width: 89%;
+    padding: 10px 5%;
+    background: #353535;
+    border: 0px solid;
+    border-radius: 5px;
+    color: #ddd;
+}
+.manage_password{
+    width: 65%;
+    float: left;
+    padding-top: 7px;
+}
+
+.manage_password input{
+    width: 15px;
+    cursor: pointer;
+}
+.manage_password a{
+    display: block;
+    color: #8c8c8c;
+    font-size: 13px;
+    text-decoration: underline;
+    margin:4px 0 0 3px;
+}
+.manage_password a:hover{
+    text-decoration: none;
+}
+.submit_area{
+    width: 35%;
+    float: right;
+    text-align: right;
+}
+.submit_area input{
+    color: #fff;
+    background: #969697;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.submit_area input:hover{
+    background: #fff;
+    color: #000;
+}
+
+/*===============================================
+    Copyright Area CSS
+================================================*/
+#copyright_area{
+    width: 100%;
+    background: #000;
+    padding-bottom: 30px;
+}
+.inner_copyright{
+    overflow: hidden;
+    background: #232323;
+    padding: 20px 0;
+    border-radius: 5px;
+}
+.inner_copyright p{
+    color: #666666;
+    font-size: 13px;
+    margin: 0;
+}
+
+.left_copyright{
+    width: 65%;
+    float: left;
+}
+.left_copyright p{
+    padding-left: 20px;
+}
+.right_copyright{
+    width: 35%;
+    float: right;
+    text-align: right;
+}
+.right_copyright p{
+    padding-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===============================================
+    
+================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===============================================
+    
+================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
